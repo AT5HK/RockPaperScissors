@@ -11,7 +11,7 @@ import SwiftUI
 struct RockPaperScissors_remakeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MatchView()
         }
     }
 }
