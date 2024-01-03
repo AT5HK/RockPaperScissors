@@ -13,15 +13,13 @@ struct FightOptionButton: View {
     let buttonColor: Color
     
     var body: some View {
-        Button("") {
-//            model.fight()
-        }
-        .font(.system(.largeTitle, design: .default, weight: .bold))
-        .frame(width: 375, height: 75)
-        .foregroundColor(.white)
-        .background(Color(.systemBlue))
-        .cornerRadius(8.0)
-        .padding()
+        Text(buttonName)
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 20)
+            .font(.largeTitle.bold())
+            .foregroundColor(.white)
+            .background(buttonColor)
+            .clipShape(RoundedRectangle(cornerRadius: 20))
     }
 }
 

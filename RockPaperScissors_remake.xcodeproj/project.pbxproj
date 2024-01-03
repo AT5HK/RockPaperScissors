@@ -13,6 +13,7 @@
 		29E4D9562B43EB260004A6B2 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4D9552B43EB260004A6B2 /* MatchView.swift */; };
 		29E4D9582B43F21E0004A6B2 /* MatchModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4D9572B43F21E0004A6B2 /* MatchModelView.swift */; };
 		29E4D95A2B44039E0004A6B2 /* FightOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4D9592B44039E0004A6B2 /* FightOptionButton.swift */; };
+		29E4D95C2B4509850004A6B2 /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4D95B2B4509840004A6B2 /* MatchModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		29E4D9552B43EB260004A6B2 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
 		29E4D9572B43F21E0004A6B2 /* MatchModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModelView.swift; sourceTree = "<group>"; };
 		29E4D9592B44039E0004A6B2 /* FightOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightOptionButton.swift; sourceTree = "<group>"; };
+		29E4D95B2B4509840004A6B2 /* MatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +57,12 @@
 		29E4D9462B43EA2D0004A6B2 /* RockPaperScissors_remake */ = {
 			isa = PBXGroup;
 			children = (
+				29E4D95D2B452C810004A6B2 /* Screens */,
+				29E4D95E2B452C860004A6B2 /* Views */,
+				29E4D95F2B452C940004A6B2 /* Model */,
 				29E4D9472B43EA2D0004A6B2 /* RockPaperScissors_remakeApp.swift */,
 				29E4D94B2B43EA340004A6B2 /* Assets.xcassets */,
 				29E4D94D2B43EA340004A6B2 /* Preview Content */,
-				29E4D9552B43EB260004A6B2 /* MatchView.swift */,
-				29E4D9572B43F21E0004A6B2 /* MatchModelView.swift */,
-				29E4D9592B44039E0004A6B2 /* FightOptionButton.swift */,
 			);
 			path = RockPaperScissors_remake;
 			sourceTree = "<group>";
@@ -71,6 +73,47 @@
 				29E4D94E2B43EA340004A6B2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		29E4D95D2B452C810004A6B2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				29E4D9602B452CB50004A6B2 /* MatchView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		29E4D95E2B452C860004A6B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29E4D9612B452CEC0004A6B2 /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		29E4D95F2B452C940004A6B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				29E4D95B2B4509840004A6B2 /* MatchModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		29E4D9602B452CB50004A6B2 /* MatchView */ = {
+			isa = PBXGroup;
+			children = (
+				29E4D9552B43EB260004A6B2 /* MatchView.swift */,
+				29E4D9572B43F21E0004A6B2 /* MatchModelView.swift */,
+			);
+			path = MatchView;
+			sourceTree = "<group>";
+		};
+		29E4D9612B452CEC0004A6B2 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				29E4D9592B44039E0004A6B2 /* FightOptionButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29E4D9582B43F21E0004A6B2 /* MatchModelView.swift in Sources */,
+				29E4D95C2B4509850004A6B2 /* MatchModel.swift in Sources */,
 				29E4D95A2B44039E0004A6B2 /* FightOptionButton.swift in Sources */,
 				29E4D9562B43EB260004A6B2 /* MatchView.swift in Sources */,
 				29E4D9482B43EA2D0004A6B2 /* RockPaperScissors_remakeApp.swift in Sources */,
