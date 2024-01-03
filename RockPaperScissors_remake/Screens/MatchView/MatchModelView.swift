@@ -9,9 +9,9 @@ import Foundation
 
 struct MatchModelView {
     
-    var userMove: Moves = .rock
-    var computerMove: Moves = .paper
-    var matchTitle = "Press Fight"
+    var userMove: Moves
+    var computerMove: Moves
+    var matchTitle: String
     
     mutating func fight(selectedMove: Moves) {
         let computerGenerateMove = randomMove()
@@ -27,7 +27,7 @@ struct MatchModelView {
     }
     
     
-    func fightOutcome(selectedMove: Moves, computerMove: Moves) -> Match? {
+    private func fightOutcome(selectedMove: Moves, computerMove: Moves) -> Match? {
         
         //check for tie before checking arrays for performance
         if selectedMove == computerMove { return .tie }
@@ -56,17 +56,17 @@ struct MatchModelView {
 }
 
 
-enum Match: String {
-    case win, lose, tie
-    
-    var matchTitle: String {
-        switch self {
-        case .win:
-            return "You Win!"
-        case .lose:
-            return "You Lost"
-        case .tie:
-            return "It's a Tie"
-        }
-    }
-}
+fileprivate enum Match: String {
+                        case win, lose, tie
+                        
+                        var matchTitle: String {
+                            switch self {
+                            case .win:
+                                return "You Win!"
+                            case .lose:
+                                return "You Lost"
+                            case .tie:
+                                return "It's a Tie"
+                            }
+                        }
+                    }

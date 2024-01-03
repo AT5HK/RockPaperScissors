@@ -14,6 +14,7 @@
 		29E4D9582B43F21E0004A6B2 /* MatchModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4D9572B43F21E0004A6B2 /* MatchModelView.swift */; };
 		29E4D95A2B44039E0004A6B2 /* FightOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4D9592B44039E0004A6B2 /* FightOptionButton.swift */; };
 		29E4D95C2B4509850004A6B2 /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4D95B2B4509840004A6B2 /* MatchModel.swift */; };
+		29E4D9632B4557980004A6B2 /* UserMoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4D9622B4557970004A6B2 /* UserMoveButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		29E4D9572B43F21E0004A6B2 /* MatchModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModelView.swift; sourceTree = "<group>"; };
 		29E4D9592B44039E0004A6B2 /* FightOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightOptionButton.swift; sourceTree = "<group>"; };
 		29E4D95B2B4509840004A6B2 /* MatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
+		29E4D9622B4557970004A6B2 /* UserMoveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMoveButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		29E4D95E2B452C860004A6B2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				29E4D9642B455D740004A6B2 /* View */,
 				29E4D9612B452CEC0004A6B2 /* Buttons */,
 			);
 			path = Views;
@@ -111,9 +114,17 @@
 		29E4D9612B452CEC0004A6B2 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				29E4D9592B44039E0004A6B2 /* FightOptionButton.swift */,
+				29E4D9622B4557970004A6B2 /* UserMoveButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		29E4D9642B455D740004A6B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29E4D9592B44039E0004A6B2 /* FightOptionButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +202,7 @@
 				29E4D95A2B44039E0004A6B2 /* FightOptionButton.swift in Sources */,
 				29E4D9562B43EB260004A6B2 /* MatchView.swift in Sources */,
 				29E4D9482B43EA2D0004A6B2 /* RockPaperScissors_remakeApp.swift in Sources */,
+				29E4D9632B4557980004A6B2 /* UserMoveButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
