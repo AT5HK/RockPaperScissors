@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MatchView: View {
     
-    @State var viewModel = MatchModelView(userMove: .scissors, computerMove: .rock, matchTitle: "Press Fight")
+    @State var viewModel = MatchModelView(userMove: .scissors, computerMove: .rock, matchTitle: "Select your move")
     
     var body: some View {
         VStack {
@@ -39,13 +39,13 @@ struct MatchView: View {
             
             UserMoveButton(name: Moves.paper.uppercasedString, color: .red, action:
             {
-                viewModel.fight(selectedMove: .rock)
+                viewModel.fight(selectedMove: .paper)
             })
             .padding(.horizontal, 15)
             
             UserMoveButton(name: Moves.scissors.uppercasedString, color: .yellow, action:
             {
-                viewModel.fight(selectedMove: .rock)
+                viewModel.fight(selectedMove: .scissors)
             })
             .padding()
             
